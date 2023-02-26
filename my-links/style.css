@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-color: #6ee7b7;
+  --bg-color: #18181b;
+  --text-color: #f2f2f2;
+
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+  background: var(--bg-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+  text-align: center;
+  color: var(--bg-color);
+
+  width: 100%;
+  padding-block: 8rem;
+  background: var(--primary-color);
+}
+
+header h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
+
+/* links */
+#links {
+  max-width: 57rem;
+  margin: 3.2rem auto;
+  padding-inline: 2.4rem;
+}
+
+#links h3 {
+  font-weight: 500;
+  color: var(--primary-color);
+
+  margin-bottom: 1.2rem;
+}
+
+#links ul {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#links ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+
+  margin-right: 0.8rem;
+
+  transition: opacity 0.2s;
+}
+
+#links ul li a:hover {
+  opacity: 0.7;
+}
+
+#links ul li p {
+  color: var(--primary-color);
+  text-overflow: ellipsis;
+  text-decoration: underline;
+
+  width: 15rem;
+  overflow: hidden;
+  white-space: nowrap;
+
+  opacity: 0.7;
+}
+
+/* media queries */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #059669;
+    --bg-color: #f2f2f2;
+    --text-color: #18181b;
+  }
+}
