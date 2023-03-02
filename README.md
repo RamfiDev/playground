@@ -1,3 +1,3 @@
 # **Playground**
 
-Este repositório contém apenas projetos que faço enquanto estou paticando HTML, CSS e JavaScript. 📚
+Este repositório contém apenas projetos que faço enquanto estou praticando HTML, CSS e JavaScript. 📚
